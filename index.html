@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- IMPORT BOX ICONS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h2 class="logo">My<span>Portfolio</span></h2>
+
+    <!-- MOBILE SCREEN -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="bx bx-menu-alt-right"></i>
+      <i class="bx bx-x"></i>
+    </label>
+    <!-- END MOBILE SCREEN -->
+
+   <ul class="list-menu">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#experience">Experience</a></li>  <!-- new -->
+  <li><a href="#projects">Projects</a></li>      <!-- new -->
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="left">
+        <h2 class="hello-text">Hello, I'm</h2>
+        <h1 class="name-text">Mary Ann Gomez</h1>
+        <h2 class="role-text">
+          <span>Associate Software Engineer</span>
+          <span>Data Analyst</span>
+        </h2>
+
+        <div class="list-button">
+          <button class="download-cv" onclick="downloadCV()">Download CV</button>
+          <button class="contact-me" onclick="scrollToSection('contact')">Contact Me</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <img
+          class="blob-img"
+          src="./9002153-removebg-preview.png"
+          alt="Mary Ann image"
+        />
+        <img
+          class="rocket-img"
+          src="./img-removebg-preview.png"
+          alt="background"
+        />
+      </div>
+    </section>
+
+    
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+      Hi, I’m  a curious mind who loves turning data into stories and ideas into code. With a passion for tech, analytics, and continuous growth, I build smart, user-centered solutions that make systems work better and insights shine brighter. 
+<br/>  I’m someone who’s deeply passionate about self-learning and constantly exploring new technologies. I enjoy staying curious, experimenting with emerging tools, and continuously improving my skills.
+ </p>
+    </section>
+
+    
+
+  <section id="experience" class="section">
+  <h2>Experience</h2>
+
+  <div class="experience-entry">
+    <h3>Associate Software Engineer</h3>
+    <span class="experience-duration">2023 – 2024</span>
+    <p>
+     I gained strong technical and analytical skills through hands-on experience in SQL development, PeopleSoft customization, and full software lifecycle support. I learned to design and optimize complex queries for data manipulation, ensuring accuracy and performance in business operations. My work with Oracle PeopleSoft Financials enhanced my expertise in system customization, troubleshooting, and data migration. 
+    
+    </p>
+  </div>
+
+  <div class="experience-entry">
+    <h3>Customer Service Representative</h3>
+    <span class="experience-duration">2021 – 2023</span>
+    <p>
+     Helped me develop exceptional communication and interpersonal skills, enabling me to handle diverse customer concerns with professionalism and empathy. I strengthened my ability to listen actively, analyze problems quickly, and deliver clear, effective solutions under pressure. This experience enhanced my patience, adaptability, and conflict-resolution skills, which are essential in fast-paced and high-volume environments.
+
+
+    <!-- SKILLS SECTION -->
+  <!-- SKILLS SECTION -->
+<section id="skills" class="section">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+        alt="HTML"
+      />
+      <p>HTML</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+        alt="CSS"
+      />
+      <p>CSS</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        alt="JavaScript"
+      />
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        alt="Python"
+      />
+      <p>Python</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        alt="MySQL"
+      />
+      <p>MySQL</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+        alt="SQL"
+      />
+      <p>SQL</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="./excel.png"
+        alt="Excel"
+      />
+      <p>Excel</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="./tableau.png"
+        alt="Tableau"
+      />
+      <p>Tableau</p>
+    </div>
+
+    <div class="skill-card">
+      <img
+        src="./power bi.png"
+        alt="Power BI"
+      />
+      <p>Power BI</p>
+    </div>
+    <div class="skill-card">
+      <img
+        src="./oracle-peoplesoft.png"
+        alt="Oracle Peoplesoft"
+      />
+      <p>Oracle Peoplesoft</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="project-card">
+  <img src="./proj1.png" alt="Project One Image" />
+  <h3>Ablaze Thift Shop</h3>
+  <p>A sleek and interactive online thrift store built with HTML, CSS, and JavaScript. Browse unique vintage finds and modern styles with a smooth shopping experience designed for thrifting enthusiasts.
+
+</p>
+  <div class="project-buttons">
+    <!-- Link for Project One live demo -->
+    <a href="https://maryannii0.github.io/ablazethrift/" target="_blank" class="btn live-demo">Live Demo</a>
+
+    <!-- Link for Project One GitHub repo -->
+    <a href="https://github.com/maryannii0/ablazethrift" target="_blank" class="btn github">GitHub</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="./proj2.png" alt="Project Two Image" />
+  <h3>My Website Portfolio Draft</h3>
+  <p>A modern, responsive portfolio built with clean HTML, CSS, and JavaScript — showcasing my skills, projects, and creative journey as a passionate web developer.</p>
+  <div class="project-buttons">
+    <!-- Link for Project Two live demo -->
+    <a href="https://maryannii0.github.io/draftwebportolio/" target="_blank" class="btn live-demo">Live Demo</a>
+
+    <!-- Link for Project Two GitHub repo -->
+    <a href="https://github.com/maryannii0/draftwebportolio" target="_blank" class="btn github">GitHub</a>
+  </div>
+</div>
+
+
+<div class="project-card">
+  <img src="./power bi.png" alt="Project Three Image" />
+  <h3>Power BI</h3>
+  <p>Built an interactive Power BI dashboard powered by SQL queries to visualize and analyze key business performance metrics.
+I designed optimized SQL scripts to extract, clean, and transform data from multiple relational databases, ensuring high accuracy and efficiency. Using Power BI, I created dynamic reports featuring KPIs, trend analyses, and visual storytelling that empowered data-driven decision-making.</p>
+  <div class="project-buttons">
+  
+    <!-- Link for Project three GitHub repo -->
+    <a href="https://github.com/maryannii0/draftwebportolio" target="_blank" class="btn github">GitHub</a>
+  </div>
+</div>
+
+</section>
+
+
+    <!-- CONTACT SECTION -->
+   <section id="contact">
+  <h3>Contact Me</h3>
+
+  <form id="contactForm" action="https://formspree.io/f/xgvpojbd" method="POST">
+    <div class="form-group">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <div id="formOutput"></div>
+</section>
+
+
+      <!-- Output Area -->
+      <div id="formOutput" style="margin-top: 20px;"></div>
+
+      <div class="contact-info">
+        <p><i class="bx bx-envelope"></i> manngomez33@gmail.com</p>
+        <p><i class="bx bx-phone"></i> +63965859500</p>
+      </div>
+    </section>
+  </main>
+
+<!-- Boxicons library (add this inside <head> if not already) -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<!-- Footer -->
+<footer>
+  <a href="https://www.facebook.com/share/1D1sDNQu4X/?mibextid=wwXIfr" target="_blank">
+    <i class="bx bxl-facebook"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/mary-ann-gomez-3aa39230b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+    <i class="bx bxl-linkedin"></i>
+  </a>
+
+  <a href="https://www.instagram.com/yourusername" target="_blank">
+    <i class="bx bxl-github"></i>
+  </a>
+</footer>
+
+
+
+
+  <br/>
+  </footer>
+  <footer>
+  <p>© 2025 Mary Ann Gomez. All rights reserved.</p>
+</footer>
+
+
+
+</body>
+
+
+</html>
